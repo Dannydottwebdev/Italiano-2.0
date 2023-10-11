@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 4fr 3fr 1fr; /* Defines a 3:7:1 ratio for header, main, and footer */
+  margin: 0; /* Remove default margin to prevent spacing */
+}
+
+.width-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px; /* Set a maximum width for the content containers */
+  margin: 0 auto; /* Center the content containers horizontally */
+  padding: 20px; /* Add some spacing inside the containers */
+}
+
+/* NavBar set up */
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.top-navbar h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #f5f5f5d1;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f5f5f5d1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #c4c0c0;
+}
+
+/* NavBar section end */
+
+/* header section start */
+
+.header-content {
+  place-items: center; /* Centers content both horizontally and vertically */
+  text-align: center; /* Centers text content horizontally (optional) */
+  margin-top: 50px;
+}
+
+header {
+  background: #333;
+  color: #f5f5f5;
+  background-image: url("images/Restaurant-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content h2 {
+  margin-bottom: 3.2rem;
+  color: #f5f5f5d1;
+}
+
+.header-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-button-container button {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-button-container button a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set text color to black */
+  transition: color 0.3s;
+}
+
+.header-button-container button:hover a {
+  color: #333; /* Change text color to a slightly darker shade on hover */
+}
+
+.header-button-container button:hover {
+  background-color: #c4c0c0; /* Change background color to a slightly darker shade on hover */
+}
+
+/* header section end */
+
+/* main section styles start */
+
+main {
+  background: #f1f1f1; /* Main section background color */
+}
+
+main h3 {
+  text-align: center;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.service-hours-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* main section styles end */
+
+/* footer styles start */
+
+footer {
+  background: #333; /* Footer background color */
+  color: white; /* Footer text color */
+  place-items: center; /* Center the content within the footer */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  border: 2px solid #333; /* Border style and color (e.g., Facebook blue) */
+  border-radius: 50%; /* To make the border circular for rounded icons */
+  padding: 5px; /* Adjust the padding to control the space between the icon and border */
+  transition: border 0.3s; /* Smooth transition effect for the border */
+}
+
+.social-icons a:hover {
+  background-color: #d5d4d4; /* Change the border color on hover (e.g., Pink) */
+}
+
+.footer-restaurant-info {
+  text-align: center;
+}
+
+.footer-restaurant-info p {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
