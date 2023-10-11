@@ -10,8 +10,7 @@ body {
 
 body {
   display: grid;
-  grid-template-rows: 4fr 3fr 1fr; /* Defines a 3:7:1 ratio for header, main, and footer */
-  margin: 0; /* Remove default margin to prevent spacing */
+  grid-template-rows: 2fr 4fr 1fr;
 }
 
 .width-container {
@@ -130,6 +129,26 @@ main h3 {
   gap: 1.2rem;
   font-size: 1.2rem;
   letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+
+.our-dishes-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; /* Adjust the gap between images as needed */
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.our-dishes-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-dishes-container img {
+  aspect-ratio: 1 / 1; /* 1:1 aspect ratio (square) */
 }
 
 /* main section styles end */
@@ -146,6 +165,8 @@ footer {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .social-icons a {
