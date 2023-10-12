@@ -188,3 +188,55 @@ footer {
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
+
+/* Media Queries Responsiveness section /* 
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  /* Navbar styles for small screens */
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Display the dropdown menu when the menu icon is clicked */
+  .menu-icon.active ~ .navbar {
+    display: block;
+  }
+
+  /* Change the hamburger icon appearance */
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f5f5f5d1;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  /* Our Dishes Container for small screens */
+  .our-dishes-container {
+    grid-template-columns: 1fr; /* Display images in a single column */
+    width: 100%;
+  }
+
+  .our-dishes-container img {
+    width: 100%;
+    height: auto; /* Let the height adjust proportionally */
+    object-fit: cover;
+  }
+
+  .header-content {
+    padding: 20px 0; /* Reduce the top and bottom padding */
+  }
+
+  body {
+    grid-template-rows: auto auto auto; /* Adjust the grid rows for smaller screens */
+  }
+}
