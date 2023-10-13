@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+.width-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+  color: #f5f5f5;
+}
+
+.top-navbar h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #f5f5f5d1;
+}
+
+.link-style {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f5f5f5d1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #c4c0c0;
+}
+
+footer {
+  background: #333;
+  color: white;
+  place-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons a {
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 5px;
+  transition: border 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #d5d4d4;
+}
+
+.footer-restaurant-info {
+  text-align: center;
+}
+
+.footer-restaurant-info p {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+header {
+  background: #333 url("images/Restaurant-image.jpg") center/cover no-repeat;
+  color: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  /* Navbar styles for small screens */
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Display the dropdown menu when the menu icon is clicked */
+  .menu-icon.active ~ .navbar {
+    display: block;
+  }
+
+  /* Change the hamburger icon appearance */
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f5f5f5d1;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin-bottom: 3.2rem;
+  margin-top: 2.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+  text-transform: uppercase;
+}
