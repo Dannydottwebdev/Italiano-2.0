@@ -1,0 +1,70 @@
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  width: 200px; /* Adjust the width as needed */
+  position: absolute;
+  left: 65%; /* Position the menu to the left */
+  top: 10%; /* Position the menu under the hamburger icon */
+  border-radius: 8px; /* Add rounded corners */
+}
+
+.dropdown-menu.active {
+  display: block; /* Display when active */
+}
+
+.dropdown-menu li {
+  text-align: center;
+  padding: 15px 0; /* Increase the padding for touch-friendly spacing */
+  border-bottom: 1px solid #ccc; /* Add a separator between items */
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none; /* Remove the border on the last item */
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #5a5858; /* Adjust text color */
+  display: block;
+  font-size: 18px; /* Increase the font size for better visibility on mobile devices */
+  transition: color 0.3s; /* Add a smooth color transition on hover */
+}
+
+.dropdown-menu a:hover {
+  color: #c4c0c0;
+}
+
+@media (max-width: 768px) {
+  /* Navbar styles for small screens */
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Display the dropdown menu when the menu icon is clicked */
+  .menu-icon.active ~ .navbar {
+    display: flex;
+  }
+
+  /* Change the hamburger icon appearance */
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f5f5f5d1;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+}
